@@ -5,6 +5,8 @@ import Header from "./components/Header";
 function App() {
   // State
   const [auth, setAuth] = useState(false);
+  const [total, setTotal] = useState(0);
+  const [cart, setCart] = useState([]);
 
   return (
     <>
