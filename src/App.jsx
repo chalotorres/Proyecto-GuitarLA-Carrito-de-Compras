@@ -16,13 +16,13 @@ function App() {
       setCart(updatedCart);
     } else {
       item.quantity = 1;
-      setCart((prevCart) => [...prevCart, item]);
+      setCart([...cart, item]);
     }
   }
 
   return (
     <>
-      <Header />
+      <Header cart={cart} />
       <main className="container-xl mt-5">
         <h2 className="text-center">Nuestra Colección</h2>
 
